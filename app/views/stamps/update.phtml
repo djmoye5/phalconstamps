@@ -1,0 +1,29 @@
+<h1>Update Stamp</h1>
+<form action="/stamps/updatesubmit" method="post" enctype="multipart/form-data">
+	<p>Name</p>
+	<input type="text" name="name" value="<?= $stamp->name ?>">
+
+	<p>Year</p>
+	<input type="text" name="year" value="<?= $stamp->yearissued ?>">
+
+	<p>Collection</p>
+	<input type="text" name="collection" value="<?= $stamp->collection ?>">
+
+	<p>Size</p>
+	<input type="text" name="size" value="<?= $stamp->size ?>">
+
+	<p>Quantity</p>
+	<input type="text" name="quantity" value="<?= $stamp->quantity ?>">
+
+	<p>Picture</p>
+	<input type="file" name="picture" value="<?= $stamp->picture ?>">
+
+	<p>Description</p>
+	<input type="text" name="description" value="<?= $stamp->description ?>">
+
+	<p>Glue to Album</p>
+	<input type="checkbox" name="glue" value="<?= $stamp->glued ?>">
+
+	<br><br>
+	<button type="submit">Update</button>
+</form>
